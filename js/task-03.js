@@ -17,31 +17,16 @@ const galaryList = document.querySelector('.gallery')
 
 galaryList.style.display = 'flex';
 galaryList.style.justifyContent = "space-between";
-// console.log(galaryList)
-
-
-// const imgList = images.map( item => {
-//   const listItem = document.createElement('li')
-//   const imgEl = document.createElement('img')
-//   listItem.insertAdjacentHTML("beforeend", 'qwe')
-//   listItem.append(galaryList)
-// })
-
-// console.log(imgList)
-
-
 
 const imgList = images.map(item => {
   const listItem = document.createElement('li')
   const imgEl = document.createElement('img')
   imgEl.src = item.url;
   imgEl.alt = item.alt;
-  imgEl.width = 320;
+  // imgEl.width = 320;
   listItem.insertAdjacentHTML('afterbegin', `<img src=${imgEl.src} alt=${imgEl.alt} height=200/>`);
-  galaryList.append(listItem)
+  return listItem;
 })
  
+galaryList.append(...imgList)
 
-console.log(galaryList)
-
- 

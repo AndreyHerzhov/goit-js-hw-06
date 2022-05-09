@@ -11,8 +11,6 @@ function onInputChange(event) {
     } else {
         spanName.textContent = event.currentTarget.value;
     }
-    
-    
 }
 
  
