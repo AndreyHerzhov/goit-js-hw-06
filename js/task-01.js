@@ -1,7 +1,7 @@
 const list = document.querySelector('#categories')
 const items = document.querySelectorAll('.item')
  
-
+ 
 console.log('Number of categories:', list.children.length)
  
  

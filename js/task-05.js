@@ -6,7 +6,7 @@ inputValue.addEventListener('input', onInputChange)
  
 
 function onInputChange(event) {
-    if (inputValue.value  == '') {
+    if (inputValue.value  === '') {
         spanName.textContent = 'Anonymous'
     } else {
         spanName.textContent = event.currentTarget.value;
