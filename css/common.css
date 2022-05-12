@@ -36,3 +36,17 @@ button {
 }
 
 
+#boxes {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 100px;
+  width: 500px;
+  background-color: #af4c4e;
+}
+
+/* .div-inside {
+  height: 30px;
+  width: 30px;
+} */
